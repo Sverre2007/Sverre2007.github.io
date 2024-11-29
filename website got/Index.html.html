@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="eigen site.css.css">
+</head>
+<body>
+    <header>
+        <img src="ghost logo.jpeg" alt="Ghost of Tsushima" class="header-image">
+        <div class="header-text">Ghost of Tsushima! Information - Credits - Development - and more!</div>
+    </header>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for sections..." onkeyup="searchFunction()">
+    </div>
+    
+    <main>
+        <h2>Game Overview.</h2>
+        <p>
+            Ghost of Tsushima is een actie-avonturenspel ontwikkeld door Sucker Punch Productions en uitgegeven door Sony Interactive Entertainment. Het spel werd uitgebracht op 17 juli 2020 voor de PlayStation 4 en later geoptimaliseerd voor de PlayStation 5. Het staat bekend om zijn prachtige open wereld, meeslepende gameplay en authentieke samurai-ervaring.
+        </p>
+        <p>
+            Samenvatting van het verhaal  
+            Het spel speelt zich af in het jaar 1274, tijdens de Mongoolse invasie van Japan. Je speelt als Jin Sakai, een samurai die zijn geboorteland, het eiland Tsushima, moet beschermen tegen de invasiemacht van Khotun Khan. Om zijn volk te redden, moet Jin traditionele samurai-regels loslaten en nieuwe tactieken omarmen, waardoor hij de beruchte "Ghost" wordt. Het verhaal draait om eer, opoffering en de strijd tussen traditie en moderniteit.
+        </p>
+        <p>
+            Belangrijkste kenmerken van de game:
+            <ul>
+                <li>Open Wereld: Weelderige landschappen zoals bamboebossen, bergen en historische locaties.</li>
+                <li>Gameplay: Mix van zwaardgevechten en stealth-tactieken.</li>
+                <li>Kunstzinnige ervaring: Een "Kurosawa-modus" voor een klassieke samurai-filmstijl.</li>
+                <li>Multiplayer-modus: Coöperatieve gameplay met vrienden in Ghost of Tsushima: Legends.</li>
+            </ul>
+        </p>
+        <p>
+            Prijzen en impact: De game ontving lovende recensies en won meerdere prijzen. Meer dan 9 miljoen verkochte exemplaren maken het een van de best verkochte PlayStation-games ooit.
+        </p>
+        
+    </main>
+    
+    <section class="credits">
+        <h2>Credits</h2>
+        <h3>Ontwikkelaar</h3>
+        <p><strong>Ontwikkelaar:</strong> Sucker Punch Productions</p>
+        <p><strong>Hoofdontwikkelaar:</strong> Nate Fox (Game Director)</p>
+        <p><strong>Creative Director:</strong> Jason Connell</p>
+        
+        <h3>Muziek</h3>
+        <p><strong>Componisten:</strong> Ilan Eshkeri, Shigeru Umebayashi</p>
+        <p><strong>Orkest:</strong> Het spel bevat muziek met traditionele Japanse instrumenten zoals de shamisen en taiko-drum, gecombineerd met orkestrale arrangementen.</p>
+        
+        <h3>Voice Actors</h3>
+        <p><strong>Jin Sakai:</strong> Daisuke Tsuji</p>
+        <p><strong>Yuna:</strong> Sumalee Montano</p>
+        <p><strong>Lord Shimura:</strong> James Hong</p>
+        <p><strong>Sensei Ishikawa:</strong> Patrick Gallagher</p>
+        <p><strong>Lady Masako:</strong> Gwendoline Yeo</p>
+        <p><strong>Taka:</strong> Nicolas Roye</p>
+        
+        <h3>Kunst en Design</h3>
+        <p><strong>Art Director:</strong> Jason Connell</p>
+        <p><strong>Lead Character Artist:</strong> Matthew S. D. Hunt</p>
+        <p><strong>Lead Environmental Artist:</strong> Nate Jones</p>
+        
+        <h3>Technologie en Software</h3>
+        <p><strong>Programmeren:</strong> David Lee, Brian Fleming</p>
+        <p><strong>Engine:</strong> Unreal Engine</p>
+        
+        <h3>Verhaal en Dialoog</h3>
+        <p><strong>Schrijvers:</strong> John Stafford, Patrick Downs</p>
+        
+        <h3>Marketing en Publiciteit</h3>
+        <p><strong>Marketing Director:</strong> Andrew Goldfarb</p>
+        <p><strong>Community Manager:</strong> Donal O'Neill</p>
+        
+        <h3>Speciale Credits</h3>
+        <p><strong>Historische Consulent:</strong> John S. Sweeney</p>
+        <p><strong>Motion Capture:</strong> Veel van de gevechts- en bewegingsanimaties zijn vastgelegd door acteurs met behulp van motion capture-technologie.</p>
+        
+        <h3>Multiplayer</h3>
+        <p><strong>Ghost of Tsushima: Legends:</strong> De multiplayer-modus werd later toegevoegd aan de game.</p>
+        
+        <h3>Speciale Vermeldingen</h3>
+        <p><strong>Dankbetuigingen:</strong> In de credits wordt ook dank uitgesproken aan verschillende Japanse culturele en historische adviseurs die hebben geholpen bij het maken van een authentieke ervaring.</p>
+        
+        <h3>Uitgever</h3>
+        <p><strong>Uitgever:</strong> Sony Interactive Entertainment</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Ghost of Tsushima Review. All rights reserved.</p>
+        <p>Buy the game: <a href="https://www.playstation.com/nl-nl/games/ghost-of-tsushima/">Click here to buy</a></p>
+        <p><a href="https://ghostoftsushima.fandom.com/wiki/Ghost_of_Tsushima_(soundtrack)" class="footer-link">Soundtracks</a></p>
+        <p><a href="Hoe is het gemaakt.html" class="footer-link2">Hoe is het gemaakt</a></p>
+        <p><a href="multiplayer.html" class="footer-link3">Multiplayer</a></p>
+    </footer>
+
+    <script src="eigen site.js.js"></script>
+    <script>
+        function searchFunction() {
+            var input, filter, h2Elements, h3Elements, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            h2Elements = document.getElementsByTagName("h2");
+            h3Elements = document.getElementsByTagName("h3");
+
+            for (i = 0; i < h2Elements.length; i++) {
+                txtValue = h2Elements[i].textContent || h2Elements[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    h2Elements[i].style.backgroundColor = "#ffeb3b"; 
+                    h2Elements[i].scrollIntoView({behavior: "smooth", block: "center"}); 
+                } else {
+                    h2Elements[i].style.backgroundColor = ""; 
+                }
+            }
+
+            for (i = 0; i < h3Elements.length; i++) {
+                txtValue = h3Elements[i].textContent || h3Elements[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    h3Elements[i].style.backgroundColor = "#ffeb3b"; 
+                    h3Elements[i].scrollIntoView({behavior: "smooth", block: "center"}); 
+                } else {
+                    h3Elements[i].style.backgroundColor = ""; 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
